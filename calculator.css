@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    background: #19174a;
+}
+body{
+    width: 400px;
+    height: fit-content;
+    background: rgba(255, 255, 255, 0.332);
+    margin: 20px auto;
+    border: solid black 20px;
+    border-radius: 35px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px; /* مسافة عمودية ثابتة بين أقسام الحاسبة */
+    
+}
+
+
+div#more, div#botton {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+div#more.hidden{
+    display: none;
+}
+/* شاشة الإدخال */
+div.input{
+    width: 100%;
+    height: 12vh;
+}
+button{
+    border: none;
+    background: none;
+    color: aqua;
+    font-weight: bold;
+}
+input{
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.485);
+    font-size: 40px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: right;
+}
+
+/* تنسيق مشترك لكل الأزرار i لتصبح دائرية تماماً وتتوسطها النصوص */
+div i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s;
+}
+
+div i:hover {
+    filter: brightness(0.9); /* تأثير خفيف عند تمرير الماوس */
+}
+
+/* تخصيص الأزرار العلمية (5 أزرار في كل صف) */
+div#more i{
+    background: rgba(3, 198, 139, 0.456);
+    width: 18%; /* لتتسع 5 أزرار في الصف مع الفراغات */
+    aspect-ratio: 1; /* يضمن دائرية الزر تماماً */
+    border-radius: 50%;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* تخصيص الأزرار الأساسية (4 أزرار في كل صف) */
+div#botton i{
+    background: rgba(2, 255, 179, 0.456);
+    width: 22%; /* لتتسع 4 أزرار في الصف مع الفراغات */
+    aspect-ratio: 1; /* يضمن دائرية الزر تماماً */
+    border-radius: 50%;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+
+

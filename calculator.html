@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+
+<div class="input">
+    <input type="text" id="input">
+</div>
+ 
+<button id="btn">more</button>
+
+<div class="hidden" id="more">
+    <i onclick="sqrt()" id="root">√</i>
+    <i onclick="record(Math.PI.toFixed(4))" id="bai">π</i>
+    <i id="power">^</i>
+    <i id="am">!</i>
+    <i id="sin">sin</i>
+    <i id="cos">cos</i>
+    <i id="tan">tan</i>
+    <i onclick="record(e.toFixed(4))" id="nibary">e</i>
+    <i id="ln">ln</i>
+    <i id="log">log</i>
+</div>
+<div id="botton">
+    <i onclick="DeleteAll()" id="DeletAll">c</i>
+    <i id="bracket">( )</i>
+    <i id="persant">%</i>
+    <i id="portion">/</i>
+    <i onclick="record(this.innerHTML)" id="seven">7</i>
+    <i onclick="record(this.innerHTML)" id="eight">8</i>
+    <i onclick="record(this.innerHTML)" id="nine">9</i>
+    <i id="multipy">x</i>
+    <i onclick="record(this.innerHTML)" id="four">4</i>
+    <i onclick="record(this.innerHTML)" id="five">5</i>
+    <i onclick="record(this.innerHTML)" id="six">6</i>
+    <i id="minus">&minus;</i> 
+    <i onclick="record(this.innerHTML)" id="one">1</i>
+    <i onclick="record(this.innerHTML)" id="two">2</i>
+    <i onclick="record(this.innerHTML)" id="three">3</i>
+    <i  id="plas">+</i>
+    <i onclick="record(this.innerHTML)" id="zero">0</i>
+    <i onclick="coma()" id="comma">.</i>
+    <i onclick="del()" id="DEL">DEL</i>
+    <i id="equal">=</i>
+</div>
+
+<script src="calculator.js"></script>
+</body>
+</html>
